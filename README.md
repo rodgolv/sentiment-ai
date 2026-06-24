@@ -30,6 +30,18 @@ Pasos para replicar este proyecto en un entorno local y desplegarlo en GCP:
 4. Configurar el esquema en BigQuery ejecutando el script SQL incluido.
 5. Desplegar la función en GCP y ejecutar `simulador_comentarios.py` localmente para iniciar la ingesta de datos.
 
-## 💡 Decisiones Técnicas y Lecciones Aprendidas
+## Decisiones Técnicas y Lecciones Aprendidas
 * Se eligió **Gemini 2.5 Flash** por su baja latencia y costo reducido en comparación con modelos más pesados, optimizando el presupuesto de la nube.
 * Se configuró el parámetro `response_mime_type="application/json"` en la API de Vertex AI para garantizar que el LLM devuelva un esquema predecible y evitar fallos en la inserción a BigQuery.
+
+## Imagenes
+
+<img width="1323" height="730" alt="Looker" src="https://github.com/user-attachments/assets/810e479c-a125-42bc-830e-f1fed54f1eb9" />
+
+\
+<img width="1436" height="718" alt="BigQuery" src="https://github.com/user-attachments/assets/c21a06f0-845f-4a33-a19b-3c42b8cd5f3c" />
+
+\
+<img width="1445" height="767" alt="sentiment-2" src="https://github.com/user-attachments/assets/5aa10629-8f44-4b4c-ae8a-d2639ccbc074" />
+
+
